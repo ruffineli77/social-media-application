@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main class="messaging-sections"> 2 flex rows.
+  <section class= "messaging-contacts"> Left window. 2 Flex rows.
+    <nav> 1 flex row
+      <h3>Users name.</h3>
+      <img src="" alt=""> Create new message. Opens a select contact modal.
+    </nav>
+    <ul>Generated list of messages/contacts.
+      <li> One contact 2 flex rows. Justify to the left.
+        <div class="single-contact-card"> 
+          <img src="" alt=""> When there is an unread message a small green dot appears within the pfp image. Add with some styling.
+          <div> Contact name on top Last message and last message time below. If the message is a certain length it is cut off with three periods. 2 flex columns. Justify to the left.
+            <h4>Contact name</h4>
+            <p>Time since last message. 15h or 4 days</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <section class="selected-message"> Right Window. 3 flex columns.
+    <nav> 1 flex row 
+      <img>(left) Selected contact info dropdown</img>
+      <h2>(left) Selected Contact Name</h2>
+      <img>(right) Video call contact</img>
+      <img>(right) Voice call contact</img>
+      <img>(right) Selected contact info dropdown</img>
+    </nav>
+    <div> Scrollable message box.
+      Not 100% sure how this will work yet.
+      Your messages appear on the right and your contacts messages appear on the left. Each message stems from a profile image in a box.
+      <div> 
+        <div> 
+          <img src="" alt=""> Smaller profile image
+          <p>\Message content.</p>
+          <p>Muted message delivered time.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <p>Messages scrollable</p>
+  </section>
+</main>
+
+{% endblock content %}
