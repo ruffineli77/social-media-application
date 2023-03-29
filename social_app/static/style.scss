@@ -7,13 +7,18 @@ $tertiary-color: #787878;
 
 $alt-color-1: #B591D9;
 $alt-color-2: #B8A9D9;
-$alt-color-3: #362559;
+$alt-color-3: #362559ec;
+$alt-color-3-content: #362559;
+$alt-color-3-hover: #2e1f4b;
+
 $alt-color-4: #BF9663;
 $alt-color-5: #F20505;
 
 $light-color-1: #a8a8a8;
 $light-color-2: #efefef;
-$light-color-3: #c8c8c8;
+$light-color-3: #c8c8c8c8;
+$light-color-3-content: #c8c8c8;
+$light-color-3-hover: #bebdbd;
 
 $dark-color-1: #292929;
 $dark-color-2: #3a3a3a;
@@ -35,6 +40,7 @@ body {
   flex-direction: column;
   scroll-behavior: smooth;
   font: 100% $font-stack;
+
   color: $secondary-color;
   background-color: $light-color-3;
   transition: background-color 1s;
@@ -45,7 +51,7 @@ body {
     text-decoration: none;
   }
   a:hover {
-    text-decoration: underline $secondary-color solid;
+    text-decoration: underline $alt-color-3-hover solid;
     // background-color: $light-color-2;
   }
 }
@@ -128,9 +134,18 @@ footer {
       text-decoration: none;
     }
     a:hover {
-      text-decoration: underline $light-color-1 solid;
-      // background-color: $light-color-2;
+      text-decoration: underline $light-color-3-hover solid;
     }
+    #navLinks { 
+      li:hover {
+      background: $alt-color-3-hover;
+      border: 2px solid $alt-color-3-hover;
+      }
+    }
+  }
+  .left-content, .center-content {
+    background-color: $alt-color-3-content;
+
   }
 }
 #generalAnchor{
@@ -188,17 +203,21 @@ hr.rounded {
 
 // Main Page Elements
 
-.left-content{
+.left-content {
   // position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-self: stretch;  
-  border-right: 4px solid  black;  
+  align-self: stretch;
+  border-right: 4px solid  black;
   margin: 0 4px;
+  padding-bottom: 25px;
 
-  width: 220px;
-  height: 95vh;
+  background-color: $light-color-3-content;
+
+
+  width: 250px;
+  height: 100%;
 
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -223,7 +242,7 @@ hr.rounded {
     font-weight: bolder;
   }
 }
-#NavLinks {
+#navLinks {
   display: flex;
   flex-direction: column;
   align-items:flex-start;
@@ -247,8 +266,12 @@ hr.rounded {
   }
   a {
     margin-left: 1em;
+    text-decoration: none;
   }
-
+  li:hover {
+    background: $light-color-3-hover;
+    border: 2px solid $light-color-3-hover;
+  }
   div {
     display: flex;
     flex-direction: row;
@@ -288,7 +311,9 @@ hr.rounded {
   align-self: stretch;
   width: 75%;
 
-  margin: 16px 10px 5px 220px;
+  background-color: $light-color-3-content;
+  margin: 16px 10px 16px 220px;
+  padding: 0 15px;
   // max-width: 80%;
   // border: 4px solid  black;
 
@@ -309,7 +334,7 @@ hr.rounded {
   }
 }
 // Tablets
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
   .video-column {
     width: 49.9999%;
   }
