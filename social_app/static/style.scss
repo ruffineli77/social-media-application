@@ -61,64 +61,6 @@ main {
   align-items: center;
   flex-direction: row;
   min-height: 75vh;
-  
-  // padding: 15px;
-}
-footer {
-  display: flex;  
-  flex-direction: column;
-  min-height: 100px;
-  width: 100%;
-}
-.top-footer {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  column-gap: 45px;
-  row-gap: 30px;
-  justify-content:end;
-  text-align:start;
-  padding: 5px 50px 5px 50px;
-  margin: 10px 1px;
-  min-height: 200px;
-
-  h3 {
-    white-space: nowrap;
-    margin: 15px 0px 1px 0px;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    margin: 6px 6px;
-    white-space: nowrap;
-  }
-  img{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-  }
-}
-.bottom-footer{
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 20px 0px 70px 0px;
-
-  img {
-    width: 2em;
-    height: 1em;
-  }
-}
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start ;
-  align-items: flex-start;
-  min-width: 20%;
 }
 .dark-mode {
   html {
@@ -145,7 +87,6 @@ footer {
   }
   .left-content, .center-content {
     background-color: $alt-color-3-content;
-
   }
 }
 #generalAnchor{
@@ -204,37 +145,26 @@ hr.rounded {
 // Main Page Elements
 
 .left-content {
-  // position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-self: stretch;
-  border-right: 4px solid  black;
+  border-left: 4px solid  black;
   padding-bottom: 25px;
-
   background-color: $light-color-3-content;
-
-
   width: 250px;
   height: 100%;
-
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-
 }
-
-
 #mainWebsiteLink {
   margin-bottom: 5px;
   text-decoration: none;
-
   h2 {
     font-family: cursive;
   }
-  
 }
 #homeLink {
   h2 {
@@ -257,7 +187,6 @@ hr.rounded {
     // min-width: 10em;
     height: 3em;
   }
-
   li:hover {
     background: lightgrey;
     border: 2px solid lightgrey;
@@ -291,7 +220,6 @@ hr.rounded {
   flex-direction: row;
   align-items:flex-end;
   gap: 15px;
-  
   margin-left: 1em;
 
   h3{
@@ -302,57 +230,42 @@ hr.rounded {
     height: 2em;
   }
 }
-
-.center-content{
+.center-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  width: 75%;
-
-  background-color: $light-color-3-content;
-  margin: 16px 10px 16px 220px;
-  padding: 0 15px;
-  // max-width: 80%;
-  // border: 4px solid  black;
-
-}
-
-.home-posts{
+  align-items: flex-start;
+  gap: 30px;
   width: 100%;
+  margin: 16px 10px 16px 400px;
+  padding: 0 15px;
+}
+.home-posts{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .post-list{
-  border: 4px solid  black;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
-
 .one-post{
   display: flex;
   flex-direction: column;
-  // border: 4px solid  brown;
   width: 520px;
   padding-bottom: 10px;
   border-bottom: 2px solid black;
-
 }
 .post-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  // border: 4px solid  purple;
 
   img {
     height: 30px;
@@ -363,7 +276,6 @@ hr.rounded {
     font-size: 1.1em;
   }
 }
-
 .author-info {
   display: flex;
   flex-direction: row;
@@ -371,7 +283,6 @@ hr.rounded {
   justify-content: space-evenly;
   max-width: 80%;
 }
-
 .post-content {
   border: 4px solid  purple;
   display: flex;
@@ -391,15 +302,12 @@ hr.rounded {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // border: 4px solid  purple;
 }
 .post-bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // border: 4px solid  purple;
 }
-
 #pfpImage {
   height: 50px;
   width: 50px;
@@ -412,15 +320,49 @@ hr.rounded {
   border-radius: 50px;
   display: inline-block;
 }
+footer {
+  display: flex;  
+  flex-direction: column;
+  min-height: 100px;
+  width: 300px;
+  margin-top: 15px;
+  gap: 15px;
+}
+.top-footer {
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    margin: 6px 6px;
+    white-space: wrap;
+  }
+}
+.bottom-footer{
+  display: flex;
+  flex-direction: column;
+}
+#profile-suggestions{
+  padding-left: 0;
+  list-style-type: none;
+}
+#profile-names {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .1px;
 
+  h5 {margin: 0;}
+}
 .right-content{
   align-self: stretch;
   width: 20%;
   border-radius: 25px;
   border: 4px solid  black;
 }
-
 
 // Laptops and TVs
 @media screen and (max-width: 1700px) {
@@ -455,8 +397,6 @@ hr.rounded {
     }
   }
 }
-
-
 // Phones
 @media screen and (max-width: 700px) {
   .video-column {

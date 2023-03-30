@@ -91,66 +91,93 @@
 
         <a href="" id="moreLink">
           <img src={{ url_for('static', filename='svg_images/bars-solid.svg') }} alt="" ></img>
-          <h3>More</h3>
+          <h3>More. This opens another sidebar in the empty space above.</h3>
         </a>
       </nav>
       
       <div class="center-content">
         {% block content %}{% endblock %}
-
-        <footer id="bottom">
-          <div class="top-footer">
-            <div class="footer-column">
-              <h3>Customer Support<hr class="rounded"></h3>
-              <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Why Us</a></li>
-                <li><a href="{{ url_for('contact') }}" class="">Contact</a></li>
-                <li><a href="{{ url_for('faqs') }}" class="">FAQs</a></li>
-                <li><a href="{{ url_for('home') }}">Privacy Policy</a></li>
-                <li><a href="{{ url_for('home') }}">Terms of Use</a></li>
-              </ul>
+        <footer>
+          <div class="post-top">
+            <div class="author-info">
+              <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+              <div id="profile-names">
+                <h5>Your Profile</h5>
+                <small>Your Username</small>
+              </div>
             </div>
-            <div class="footer-column">
-              <h3>Products and Services<hr class="rounded"></h3>
-              <ul>
-                <li><a href="{{ url_for('home') }}">Account</a></li>
-                <li><a href="{{ url_for('home') }}" class="">Subscriptions</a></li>
-                <li><a href="{{ url_for('home') }}">Settings</a></li>
-                <li><a href="{{ url_for('home') }}">News</a></li>
-                <li><a href="{{ url_for('home') }}">Settings</a></li>
-              </ul>          
-            </div>
-            <div class="footer-column">
-              <h3>Customer Support<hr class="rounded"></h3>
-              <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 1</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Content Search<hr class="rounded"></h3>
-               
-              <input type="text" placeholder="Search..">
-            </div>
+            <p>Switch</p>
           </div>
-    
-          <hr class="rounded"> 
-    
-          <div class="bottom-footer">
-            <div class="footer-copyright">
-              <h3>@2022 Elijah Ruffin</h3>
-              <button class="" onclick="toggleDarkMode()">Dark/Light</button>
+          <div class="post-top">
+            <div class="author-info">
+              <div id="profile-names">
+                <h5>Suggestions for you</h5>
+              </div>
             </div>
+            <p>See All</p>
+          </div>
+          <ul id="profile-suggestions">
+            <li>
+              <div class="post-top">
+                <div class="author-info">
+                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+                  <div id="profile-names">
+                    <h5>Your Profile</h5>
+                    <small>Your Username</small>
+                  </div>
+                </div>
+                <a>
+                  <p>Follow</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="post-top">
+                <div class="author-info">
+                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+                  <div id="profile-names">
+                    <h5>Your Profile</h5>
+                    <small>Your Username</small>
+                  </div>
+                </div>
+                <a>
+                  <p>Follow</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="post-top">
+                <div class="author-info">
+                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+                  <div id="profile-names">
+                    <h5>Your Profile</h5>
+                    <small>Your Username</small>
+                  </div>
+                </div>
+                <a>
+                  <p>Follow</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <!-- </div> -->
+          <div class="top-footer">
+            <ul>
+              <li>About</li>
+              <li>Help</li>
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>Language</li>
+              <li>Business</li>
+              <li>Subscription</li>
+            </ul>
+          </div>
+          <div class="bottom-footer">
+            <button class="" onclick="toggleDarkMode()">Dark/Light</button>
+            <small>@2023 Elijah Ruffin</small>
           </div>
         </footer>
       </div>
-
     </main>
     <hr class="rounded"> 
   </body>
