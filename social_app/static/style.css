@@ -178,7 +178,6 @@ hr.rounded {
   justify-content: space-between;
   align-self: stretch;
   border-right: 4px solid black;
-  margin: 0 4px;
   padding-bottom: 25px;
   background-color: #c8c8c8;
   width: 250px;
@@ -191,7 +190,7 @@ hr.rounded {
 }
 
 #mainWebsiteLink {
-  margin-bottom: 2em;
+  margin-bottom: 5px;
   text-decoration: none;
 }
 #mainWebsiteLink h2 {
@@ -214,7 +213,7 @@ hr.rounded {
   display: flex;
   align-items: center;
   border: 2px solid transparent;
-  width: 90%;
+  width: 95%;
   height: 3em;
 }
 #navLinks li:hover {
@@ -225,6 +224,7 @@ hr.rounded {
 #navLinks a {
   margin-left: 1em;
   text-decoration: none;
+  width: 95%;
 }
 #navLinks li:hover {
   background: #bebdbd;
@@ -271,6 +271,91 @@ hr.rounded {
   padding: 0 15px;
 }
 
+.home-posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-list {
+  border: 4px solid black;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.one-post {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.post-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-top img {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px 0 10px;
+}
+.post-top h4 {
+  font-size: 1.1em;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+}
+
+.post-content {
+  border: 4px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-content img {
+  height: 400px;
+}
+.post-content video {
+  height: 400px;
+  width: 100%;
+}
+
+.post-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pfpImage {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(#ccc 0 0) padding-box, linear-gradient(to right, #9c20aa, #fb3570) border-box;
+  color: #313149;
+  border: 5px solid transparent;
+  border-radius: 50px;
+  display: inline-block;
+}
+
 .right-content {
   align-self: stretch;
   width: 20%;
@@ -300,6 +385,10 @@ hr.rounded {
   }
   .center-content {
     margin: 16px 10px 5px 100px;
+  }
+  #navLinks a, #navLinks li {
+    width: 75%;
+    padding-left: 4px;
   }
 }
 @media screen and (max-width: 700px) {

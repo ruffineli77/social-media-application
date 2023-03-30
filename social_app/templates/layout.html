@@ -25,74 +25,75 @@
     <div id="top"></div>
     
     <main>
-      <div class="left-content">
-        <ul id="NavLinks">
+      <nav class="left-content">
+        <ul id="navLinks">
           <a href="" id="mainWebsiteLink">
             <h2>NotInstagram</h2>
           </a>
-          <li>
-            <a href="">
+          <a href="">
+            <li>
               <div id="homeLink">
                 <img src={{ url_for('static', filename='svg_images/house-door.svg') }} alt="" ></img>
                 <h3>Home</h3>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
+            </li>
+          </a>
+
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/search.svg') }} alt="" ></img>
                 <h3>Search</h3>
               </div>
-            </a>
+            </li>
           </a>
-          <li>
-            <a href="">
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/compass.svg') }} alt="" ></img>
                 <h3>Explore</h3>              
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
+            </li>
+          </a>
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/plus-circle.svg') }} alt="" ></img>
                 <h3>New post</h3>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
+            </li>
+          </a>
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/chat.svg') }} alt="" ></img>
                 <h3>Messages</h3>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="{{ url_for('notifications') }}">
+            </li>
+          </a>
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/bell.svg') }} alt="" ></img>
                 <h3>Notifications</h3>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
+            </li>
+          </a>
+          <a href="">
+            <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/person.svg') }} alt="" ></img>
                 <h3>Profile</h3>
               </div>
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
 
         <a href="" id="moreLink">
           <img src={{ url_for('static', filename='svg_images/bars-solid.svg') }} alt="" ></img>
           <h3>More</h3>
         </a>
-      </div>
+      </nav>
       
       <div class="center-content">
         {% block content %}{% endblock %}
@@ -152,8 +153,6 @@
 
     </main>
     <hr class="rounded"> 
-
-
   </body>
   
   <section>
@@ -172,17 +171,6 @@
       }
     </script>
 
-    <script>
 
-      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      } 
-    </script>
   </section>
 </html>
