@@ -37,24 +37,24 @@ main {
 .dark-mode html {
   background-color: rgba(54, 37, 89, 0.9254901961);
 }
-.dark-mode header, .dark-mode main, .dark-mode footer {
+.dark-mode header, .dark-mode main {
   color: #efefef;
   background-color: rgba(54, 37, 89, 0.9254901961);
   transition: background-color 1s, color 1s;
 }
-.dark-mode header a, .dark-mode main a, .dark-mode footer a {
+.dark-mode header a, .dark-mode main a {
   color: #efefef;
   text-decoration: none;
 }
-.dark-mode header a:hover, .dark-mode main a:hover, .dark-mode footer a:hover {
+.dark-mode header a:hover, .dark-mode main a:hover {
   -webkit-text-decoration: underline #bebdbd solid;
           text-decoration: underline #bebdbd solid;
 }
-.dark-mode header #navLinks li:hover, .dark-mode main #navLinks li:hover, .dark-mode footer #navLinks li:hover {
+.dark-mode header #navLinks li:hover, .dark-mode main #navLinks li:hover {
   background: #2e1f4b;
   border: 2px solid #2e1f4b;
 }
-.dark-mode .left-content, .dark-mode .center-content {
+.dark-mode .left-content {
   background-color: #362559;
 }
 
@@ -120,7 +120,7 @@ hr.rounded {
   border-left: 4px solid black;
   padding-bottom: 25px;
   background-color: #c8c8c8;
-  width: 250px;
+  width: 350px;
   height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -204,9 +204,9 @@ hr.rounded {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 80px;
   width: 100%;
-  margin: 16px 10px 16px 400px;
+  margin: 16px 100px 16px 300px;
   padding: 0 15px;
 }
 
@@ -258,7 +258,7 @@ hr.rounded {
 }
 
 .post-content {
-  border: 4px solid purple;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -303,7 +303,7 @@ footer {
 }
 
 .top-footer ul {
-  list-style-type: none;
+  list-style: circle;
   margin: 0;
   padding: 0;
 }
@@ -311,6 +311,11 @@ footer {
   display: inline;
   margin: 6px 6px;
   white-space: wrap;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: column;
 }
 
 #profile-suggestions {

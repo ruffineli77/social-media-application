@@ -27,10 +27,10 @@
     <main>
       <nav class="left-content">
         <ul id="navLinks">
-          <a href="" id="mainWebsiteLink">
+          <a href="{{ url_for('home') }}" id="mainWebsiteLink">
             <h2>NotInstagram</h2>
           </a>
-          <a href="">
+          <a href="{{ url_for('home') }}">
             <li>
               <div id="homeLink">
                 <img src={{ url_for('static', filename='svg_images/house-door.svg') }} alt="" ></img>
@@ -47,7 +47,7 @@
               </div>
             </li>
           </a>
-          <a href="">
+          <a href="{{ url_for('explore') }}">
             <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/compass.svg') }} alt="" ></img>
@@ -63,7 +63,7 @@
               </div>
             </li>
           </a>
-          <a href="">
+          <a href="{{ url_for('messages') }}">
             <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/chat.svg') }} alt="" ></img>
@@ -91,92 +91,12 @@
 
         <a href="" id="moreLink">
           <img src={{ url_for('static', filename='svg_images/bars-solid.svg') }} alt="" ></img>
-          <h3>More. This opens another sidebar in the empty space above.</h3>
+          <h3>More. This opens another sidebar above. It overlaps the main sidebar.</h3>
         </a>
       </nav>
       
       <div class="center-content">
         {% block content %}{% endblock %}
-        <footer>
-          <div class="post-top">
-            <div class="author-info">
-              <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-              <div id="profile-names">
-                <h5>Your Profile</h5>
-                <small>Your Username</small>
-              </div>
-            </div>
-            <p>Switch</p>
-          </div>
-          <div class="post-top">
-            <div class="author-info">
-              <div id="profile-names">
-                <h5>Suggestions for you</h5>
-              </div>
-            </div>
-            <p>See All</p>
-          </div>
-          <ul id="profile-suggestions">
-            <li>
-              <div class="post-top">
-                <div class="author-info">
-                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-                  <div id="profile-names">
-                    <h5>Your Profile</h5>
-                    <small>Your Username</small>
-                  </div>
-                </div>
-                <a>
-                  <p>Follow</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="post-top">
-                <div class="author-info">
-                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-                  <div id="profile-names">
-                    <h5>Your Profile</h5>
-                    <small>Your Username</small>
-                  </div>
-                </div>
-                <a>
-                  <p>Follow</p>
-                </a>
-              </div>
-            </li>
-            <li>
-              <div class="post-top">
-                <div class="author-info">
-                  <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-                  <div id="profile-names">
-                    <h5>Your Profile</h5>
-                    <small>Your Username</small>
-                  </div>
-                </div>
-                <a>
-                  <p>Follow</p>
-                </a>
-              </div>
-            </li>
-          </ul>
-          <!-- </div> -->
-          <div class="top-footer">
-            <ul>
-              <li>About</li>
-              <li>Help</li>
-              <li>Privacy</li>
-              <li>Terms</li>
-              <li>Language</li>
-              <li>Business</li>
-              <li>Subscription</li>
-            </ul>
-          </div>
-          <div class="bottom-footer">
-            <button class="" onclick="toggleDarkMode()">Dark/Light</button>
-            <small>@2023 Elijah Ruffin</small>
-          </div>
-        </footer>
       </div>
     </main>
     <hr class="rounded"> 

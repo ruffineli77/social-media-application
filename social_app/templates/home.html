@@ -3,90 +3,177 @@
 
 {% block content %}
 
-<div class="home-posts">
-  <div class="stories-list">
-    <div class="one-story">
+<div class="center-content">
+  <div class="home-posts">
+    <div class="stories-list">
+      <div class="one-story">
+    
+      </div>
+    </div>
+    <div class="post-list">
+      <div class="one-post">
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <h4>James Howlett</h4>
+            <small>Time since posted</small>
+          </div>
+          <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
+        </div>
+        <a href="#">
+          <div class="post-content">
+            <img src={{ url_for('static', filename='sample_posts/wolverine aoa.jpg') }} alt=""></img>
+          </div>
+        </a>
+        <div class="post-buttons">
   
-    </div>
-  </div>
-  <div class="post-list">
-    <div class="one-post">
-      <div class="post-top">
-        <div class="author-info">
-          <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-          <h4>James Howlett</h4>
-          <small>Time since posted</small>
         </div>
-        <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
-      </div>
-      <a href="#">
-        <div class="post-content">
-          <img src={{ url_for('static', filename='sample_posts/wolverine aoa.jpg') }} alt=""></img>
+        <div class="post-bottom">
+          <small>Most recent like, number of likes, click to open list of likes modal.</small>
+          <strong>James Howlett</strong>
+          <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
+          <small>Number of comments, click to open post page</small>
+          <small>Add a comment</small>
         </div>
-      </a>
-      <div class="post-buttons">
-
       </div>
-      <div class="post-bottom">
-        <small>Most recent like, number of likes, click to open list of likes modal.</small>
-        <strong>James Howlett</strong>
-        <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
-        <small>Number of comments, click to open post page</small>
-        <small>Add a comment</small>
-      </div>
-    </div>
-
-    <div class="one-post">
-      <div class="post-top">
-        <div class="author-info">
-          <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-          <h4>Ororo Munroe</h4>
+  
+      <div class="one-post">
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <h4>Ororo Munroe</h4>
+          </div>
+          <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
         </div>
-        <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
-      </div>
-      <a href="#">
-        <div class="post-content">
-          <img src={{ url_for('static', filename='sample_posts/storm aoa.jpg') }} alt=""></img>
+        <a href="#">
+          <div class="post-content">
+            <img src={{ url_for('static', filename='sample_posts/storm aoa.jpg') }} alt=""></img>
+          </div>
+        </a>
+        <div class="post-buttons">
+  
         </div>
-      </a>
-      <div class="post-buttons">
-
-      </div>
-      <div class="post-bottom">
-        <small>Most recent like, number of likes, click to open list of likes modal.</small>
-        <strong>Ororo Munroe</strong>
-        <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
-        <small>Number of comments, click to open post page</small>
-        <small>Add a comment</small>
-      </div>
-    </div>
-
-    <div class="one-post">
-      <div class="post-top">
-        <div class="author-info">
-          <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
-          <h4>Kurt Wagner</h4>
+        <div class="post-bottom">
+          <small>Most recent like, number of likes, click to open list of likes modal.</small>
+          <strong>Ororo Munroe</strong>
+          <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
+          <small>Number of comments, click to open post page</small>
+          <small>Add a comment</small>
         </div>
-        <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
       </div>
-      <a href="#">
-        <div class="post-content">
-          <img src={{ url_for('static', filename='sample_posts/nightcrawler aoa.png') }} alt=""></img>
+  
+      <div class="one-post">
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <h4>Kurt Wagner</h4>
+          </div>
+          <img src={{ url_for('static', filename='svg_images/three-dots.svg') }} alt=""></img>
         </div>
-      </a>
-      <div class="post-buttons">
-
-      </div>
-      <div class="post-bottom">
-        <small>Most recent like, number of likes, click to open list of likes modal.</small>
-        <strong>Kurt Wagner</strong>
-        <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
-        <small>Number of comments, click to open post page</small>
-        <small>Add a comment</small>
+        <a href="#">
+          <div class="post-content">
+            <img src={{ url_for('static', filename='sample_posts/nightcrawler aoa.png') }} alt=""></img>
+          </div>
+        </a>
+        <div class="post-buttons">
+  
+        </div>
+        <div class="post-bottom">
+          <small>Most recent like, number of likes, click to open list of likes modal.</small>
+          <strong>Kurt Wagner</strong>
+          <p>Post Caption. Wrap to next line if too long, click to unwrap hidden text</p>
+          <small>Number of comments, click to open post page</small>
+          <small>Add a comment</small>
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="right-suggestions">
+    <div class="post-top">
+      <div class="author-info">
+        <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+        <div id="profile-names">
+          <h5>Your Profile</h5>
+          <small>Your Username</small>
+        </div>
+      </div>
+      <p>Switch</p>
+    </div>
+    <div class="post-top">
+      <div class="author-info">
+        <div id="profile-names">
+          <h5>Suggestions for you</h5>
+        </div>
+      </div>
+      <p>See All</p>
+    </div>
+    <ul id="profile-suggestions">
+      <li>
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <div id="profile-names">
+              <h5>Your Profile</h5>
+              <small>Your Username</small>
+            </div>
+          </div>
+          <a>
+            <p>Follow</p>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <div id="profile-names">
+              <h5>Your Profile</h5>
+              <small>Your Username</small>
+            </div>
+          </div>
+          <a>
+            <p>Follow</p>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="post-top">
+          <div class="author-info">
+            <img id="pfpImage" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
+            <div id="profile-names">
+              <h5>Your Profile</h5>
+              <small>Your Username</small>
+            </div>
+          </div>
+          <a>
+            <p>Follow</p>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <footer>
+      <div class="top-footer">
+        <ul>
+          <li>About</li>
+          <li>Help</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Language</li>
+          <li>Business</li>
+          <li>Subscription</li>
+        </ul>
+      </div>
+      <div class="bottom-footer">
+        <button class="" onclick="toggleDarkMode()">Dark/Light</button>
+        <small>@2023 Elijah Ruffin</small>
+      </div>
+    </footer>
+  </div>
 </div>
+
+
+
+
 
 {% endblock content %}
