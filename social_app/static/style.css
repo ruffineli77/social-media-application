@@ -206,11 +206,11 @@ hr.rounded {
   align-items: flex-start;
   gap: 80px;
   width: 100%;
-  margin: 16px 100px 16px 300px;
+  margin: 16px 100px 16px 450px;
   padding: 0 15px;
 }
 
-.home-posts {
+.home-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,17 +264,29 @@ hr.rounded {
   align-items: center;
 }
 .post-content img {
-  height: 400px;
+  height: 550px;
 }
 .post-content video {
-  height: 400px;
+  height: 550px;
   width: 100%;
 }
 
 .post-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  margin: 15px 0;
+}
+.post-buttons div a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+.post-buttons img {
+  height: 25px;
+  width: 25px;
+}
+.post-buttons svg:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 .post-bottom {
