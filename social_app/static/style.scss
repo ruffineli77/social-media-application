@@ -7,8 +7,9 @@ $tertiary-color: #787878;
 
 $alt-color-1: #B591D9;
 $alt-color-2: #B8A9D9;
+// $alt-color-3: black;
 $alt-color-3: #362559ec;
-$alt-color-3-content: #362559;
+$alt-color-3-content: #1e1e1e;
 $alt-color-3-hover: #2e1f4b;
 
 $alt-color-4: #BF9663;
@@ -151,7 +152,7 @@ hr.rounded {
   border-left: 4px solid  black;
   padding-bottom: 25px;
   background-color: $light-color-3-content;
-  width: 350px;
+  width: 335px;
   height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -236,10 +237,10 @@ hr.rounded {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
   width: 100%;
   // margin: 16px 16px 16px 300px;
-  margin: 16px 100px 16px 480px;
+  margin: 16px 100px 16px 450px;
   padding: 0 15px;
 }
 .home-page{
@@ -305,12 +306,13 @@ hr.rounded {
 }
 .post-content {
   background-color: black;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 550px;
-  
+
 
   img {
     max-height: 550px;
@@ -347,7 +349,7 @@ hr.rounded {
   height: 150px;
 
   div, p, a {
-    margin: 5px 0;
+    margin: 4px 0;
   }
 
   img:hover {
@@ -481,14 +483,46 @@ footer {
 
 }
 
-// Laptops and TVs
+@media screen and (max-width: 1900px) {
+
+  .left-content {
+    width: 245px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+
+  // .center-content {
+  //   margin: 16px 100px 16px 340px;
+  // }
+}
+
+// Laptops and Small TVs
 @media screen and (max-width: 1700px) {
   .video-column {
     width: 33.33333%;
   }
+
+  .left-content {
+    width: 245px;
+  }
+  .center-content {
+    margin: 16px 100px 16px 380px;
+  }
 }
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+  .center-content {
+    margin: 16px 100px 16px 345px;
+  }
+}
+
 // Tablets
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .video-column {
     width: 49.9999%;
   }
@@ -514,8 +548,16 @@ footer {
     }
   }
 }
+
+// Center-content items are stacked
+@media screen and (max-width: 1160px) {
+
+  .center-content {
+    list-style: none;
+  }
+}
 // Phones
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   .video-column {
     width: 99.99999%;
   }
