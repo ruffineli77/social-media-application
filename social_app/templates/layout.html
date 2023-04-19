@@ -79,7 +79,7 @@
               </div>
             </li>
           </a>
-          <a href="">
+          <a href="{{ url_for('profile') }}">
             <li>
               <div>
                 <img src={{ url_for('static', filename='svg_images/person.svg') }} alt="" ></img>
@@ -89,10 +89,18 @@
           </a>
         </ul>
 
-        <a href="" id="moreLink">
-          <img src={{ url_for('static', filename='svg_images/bars-solid.svg') }} alt="" ></img>
-          <h3>More</h3>
-        </a>
+        <div class="more-dropdown">
+          <a href="" id="moreLink">
+            <img src={{ url_for('static', filename='svg_images/bars-solid.svg') }} alt="" ></img>
+            <h3>More</h3>
+          </a>
+          <div class="more-dropdown-content" id="moreTab">
+            
+
+          </div>
+
+        </div>
+
       </nav>
       
       <div class="center-content">
@@ -103,25 +111,37 @@
 
     <section>
       <script>
-        function revealParagraph() {
-          var paragraphToHide = document.getElementById("hideParagraph")
-          paragraphToHide.setAttribute("id", "showParagraph");
+        function revealCaption() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("moreCaption");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.style.display = "none";
+            moreText.style.display = "inline";
+          }
         }
       </script>
-    </section>
 
-    <section>
       <script>
-        function toggleDarkMode() {
-          var dark_setting = localStorage.getItem('isDarkMode')
-          var body_element = document.body;
-  
-          body_element.classList.toggle("dark-mode");
-  
-          if (body_element.classList.contains("dark-mode")){
-            localStorage.setItem('isDarkMode', true)
-          } else{
-            localStorage.setItem('isDarkMode', false)
+        function revealMoreDropdown() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("moreCaption");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.style.display = "none";
+            moreText.style.display = "inline";
           }
         }
       </script>

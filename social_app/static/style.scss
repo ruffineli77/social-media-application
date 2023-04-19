@@ -232,6 +232,18 @@ hr.rounded {
     height: 2em;
   }
 }
+
+.more-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: grey;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+
+}
+
 .center-content {
   display: flex;
   flex-direction: row;
@@ -240,7 +252,7 @@ hr.rounded {
   gap: 40px;
   width: 100%;
   // margin: 16px 16px 16px 300px;
-  margin: 16px 100px 16px 450px;
+  margin: 16px 100px 16px 370px;
   padding: 0 15px;
 }
 .home-page{
@@ -346,7 +358,7 @@ hr.rounded {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 150px;
+  min-height: 150px;
 
   div, p, a {
     margin: 4px 0;
@@ -359,6 +371,14 @@ hr.rounded {
     text-decoration: none;
   }
 }
+#remainingCaption {
+  display: none;
+
+}
+
+#moreCaption{
+  display: none;
+}
 
 #hideParagraph {
   width: 100%;
@@ -366,14 +386,12 @@ hr.rounded {
   overflow: hidden;
   text-overflow: "... more";
 }
-
 #showParagraph{
   width: 100%;
   white-space: wrap;
   overflow: visible;
   text-overflow: ellipsis;
 }
-
 .likes-section{
   display: flex;
   flex-direction: row;
