@@ -336,26 +336,12 @@ hr.rounded {
   text-decoration: none;
 }
 
-#remainingCaption {
-  display: none;
+#moreDots:hover {
+  cursor: pointer;
 }
 
 #moreCaption {
   display: none;
-}
-
-#hideParagraph {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: "... more";
-}
-
-#showParagraph {
-  width: 100%;
-  white-space: wrap;
-  overflow: visible;
-  text-overflow: ellipsis;
 }
 
 .likes-section {
