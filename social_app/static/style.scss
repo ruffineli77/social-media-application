@@ -371,9 +371,6 @@ hr.rounded {
     text-decoration: none;
   }
 }
-#startCaption {
-
-}
 #moreDots {
   
 }
@@ -558,14 +555,21 @@ footer {
   }
 }
 
-// Center-content items are stacked
+// Center-content items are stacked. 
+// Suggestions section is placed in the posts list.
+// Footer is placed at the bottom. 
 @media screen and (max-width: 1160px) {
 
   .center-content {
     list-style: none;
   }
+
+  .right-suggestions {
+    display: none;
+  }
 }
 // Phones
+// Sidebar is on the bottom, 
 @media screen and (max-width: 780px) {
   .video-column {
     width: 99.99999%;

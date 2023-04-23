@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="post-list">
-    <div class="one-post">
+    <div class="one-post" id="post1">
       <div class="post-top">
         <div class="author-info">
           <img class="pfp-image-medium" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
@@ -80,7 +80,7 @@
         </div>
 
 
-        <p id="startCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots" onclick="revealCaption()">...more</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <p id="startCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots" onclick="revealCaption('post1')">...<br>more</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
 
         <a href="" id="">
           <p>View all (generated number) comments</p>
@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <div class="one-post">
+    <div class="one-post" id="post2">
       <div class="post-top">
         <div class="author-info">
           <img class="pfp-image-medium" id="pfpActiveStory" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
@@ -135,9 +135,8 @@
           <p>Liked by <a>James Howlett</a> and <a>80 others</a></p>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots">...</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <p id="startCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots" onclick="revealCaption('post2')">...<br>more</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
 
-        <button onclick="revealCaption()" id="myBtn">Read more</button>  
         
         <a href="" id="">
           <p>View all (generated number) comments</p>
@@ -151,7 +150,7 @@
       </div>
     </div>
 
-    <div class="one-post">
+    <div class="one-post" id="post3">
       <div class="post-top">
         <div class="author-info">
           <img class="pfp-image-medium" src={{ url_for('static', filename='sample_posts/Bobby.jpg') }} alt=""></img>
@@ -191,9 +190,7 @@
           <p>Liked by <a>Ororo Monroe</a> and <a>80 others</a></p>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots">...</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-
-        <button onclick="revealCaption()" id="myBtn">Read more</button>   
+        <p id="startCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots" onclick="revealCaption('post3')">...<br>more</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
         
         <a href="" id="">
           <p>View all (generated number) comments</p>
