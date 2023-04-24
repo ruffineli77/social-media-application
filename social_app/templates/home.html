@@ -82,9 +82,9 @@
 
         <p id="startCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="moreDots" onclick="revealCaption('post1')">...<br>more</span><span id="moreCaption">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
 
-        <a href="" id="">
+        <span id="openModal">
           <p>View all (generated number) comments</p>
-        </a>  
+        </span>  
         <div class="home-comment-section">
           <input type="text" id="" placeholder="Add a comment..." name="comment" minlength="4" maxlength="250" size="10">
           <a href="" id="">
@@ -92,6 +92,25 @@
           </a>
         </div>
       </div>
+
+      <div id="postModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" id="post1Modal">
+          <span class="modal-close">&times;</span>
+          <div class="modal-body">
+            <div class="modal-post-content">
+              <img src={{ url_for('static', filename='sample_posts/wolverine aoa.jpg') }} alt=""></img>
+
+            </div>
+            <div class="modal-post-comments">
+              <p>Author Name, muted location, post options.</p>
+              <p>List of comment</p>
+            </div>
+            <p>Some other text...</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="one-post" id="post2">
