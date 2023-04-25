@@ -96,11 +96,8 @@
           </a>
           <div class="more-dropdown-content" id="moreTab">
             
-
           </div>
-
         </div>
-
       </nav>
       
       <div class="center-content">
@@ -117,7 +114,31 @@
         }
       </script>
 
-      <script type="text/javascript">
+      <script>
+        function openModal(postID) {
+          currentModal =document.querySelector('#' + postID + ' #postModal')
+          currentModal.style.display = 'block';
+
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(postID) {
+          currentModal.style.display = 'none';
+          document.body.style.overflow = 'auto';
+
+        }
+
+        window.onclick = function(event) {
+          if (event.target == currentModal) {
+            currentModal.style.display = "none";
+            document.body.style.overflow = 'auto';
+
+          }
+        }
+
+      </script>
+
+      <!-- <script type="text/javascript">
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -143,7 +164,7 @@
             modal.style.display = "none";
           }
         } 
-      </script>
+      </script> -->
     </section>
   </body>
 </html>

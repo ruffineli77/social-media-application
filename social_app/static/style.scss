@@ -187,11 +187,13 @@ hr.rounded {
     width: 95%;
     // min-width: 10em;
     height: 3em;
+    padding-left: 7px;
+
   }
   li:hover {
     background: lightgrey;
     border: 2px solid lightgrey;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   a {
     margin-left: 1em;
@@ -415,8 +417,9 @@ hr.rounded {
 
 
  /* The Modal (background) */
-.postModal {
-  display: none; /* Hidden by default */
+
+.photoModal {
+
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -428,8 +431,13 @@ hr.rounded {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+#postModal {
+  display: none; /* Hidden by default */
+}
+
 .modal-content {
   display: flex;
+  flex-direction: column;
   height: 100%;
   // width: 100%;
   width: 80%;
@@ -439,13 +447,21 @@ hr.rounded {
   padding: 0;
   border: 1px solid #888;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
+  // animation-name: animatetop;
   animation-duration: 0.4s  
 }
-#openModal:hover {
+#postModalSpan:hover {
   cursor: pointer;
 }
+.modal-close {
+  margin: 10px;
+}
 
+.modal-body {
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: row;
+}
 /* The Close Button */
 .close {
   color: #aaa;
@@ -461,13 +477,7 @@ hr.rounded {
   cursor: pointer;
 }
 
-.modal-close {
-  margin: 10px;
-}
 
-.modal-body {
-  padding: 2px 16px
-}
 
 .modal-post-content {
 
